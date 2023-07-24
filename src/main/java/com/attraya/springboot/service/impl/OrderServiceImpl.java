@@ -9,6 +9,7 @@ import com.attraya.springboot.repository.OrderRepository;
 import com.attraya.springboot.repository.PaymentRepository;
 import com.attraya.springboot.service.OrderService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
@@ -24,6 +25,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Transactional
     public OrderResponse placeOrder(OrderRequest orderRequest) {
 
         Order order = orderRequest.getOrder();
