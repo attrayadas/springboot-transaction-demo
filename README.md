@@ -24,9 +24,12 @@ create database transaction_demo
 ```bash
 mvn spring-boot:run
 ```
-The end-point to place order: <http://localhost:8080/api/v1/orders>
+**5. The end-point to place order**
+```bash
+http://localhost:8080/api/v1/orders
+```
 
-**5. Sample Valid Request Body**
+**6. Sample Valid Request Body**
 ##### <a id="placeOrder">Place order (POST) -> /api/v1/orders</a>
 ```json
 {
